@@ -1,8 +1,12 @@
 import '../scss/main.scss';
 
+import moment from 'moment';
+
 /* place your code below */
 
-console.log('HELLO 🚀')
+console.log(moment().startOf('day').fromNow());
+
+console.log('HELLO 🚀');
 
 const firstName ='Marcin';  
 const age =30;
