@@ -1,14 +1,13 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](hhttps://iddp.com/wp-content/uploads/2016/08/welcome.jpg)
 
-# WTF Webpack Starter Kit 
+# Homepage Marcin Kalita
 
-Simple toolkit for your static websites development.
+Welcome on My website. You can read teory of frontends development code and fundaments. Go into and have fun!  
 
-## How to use it?
-
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
 
 ## Available scripts
+
+`npm install` - install webkit
 
 `npm run start` - runs development mode
 
