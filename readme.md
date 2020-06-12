@@ -1,4 +1,4 @@
-![welcome](hhttps://iddp.com/wp-content/uploads/2016/08/welcome.jpg)
+![welcome](https://iddp.com/wp-content/uploads/2016/08/welcome.jpg)
 
 # Homepage Marcin Kalita
 
@@ -11,7 +11,7 @@ Run your git and write:
 
 `npm install` - install webkit
 
-## Avabile scrpits? 
+## Available scrpits? 
 
 `npm run start` - runs development mode
 
