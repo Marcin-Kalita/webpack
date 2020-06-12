@@ -1,13 +1,17 @@
-![cover](hhttps://iddp.com/wp-content/uploads/2016/08/welcome.jpg)
+![welcome](hhttps://iddp.com/wp-content/uploads/2016/08/welcome.jpg)
 
 # Homepage Marcin Kalita
 
 Welcome on My website. You can read teory of frontends development code and fundaments. Go into and have fun!  
 
 
-## Available scripts
+## How to use it? 
+
+Run your git and write:
 
 `npm install` - install webkit
+
+## Avabile scrpits? 
 
 `npm run start` - runs development mode
 
