@@ -2,6 +2,7 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 html {
   box-sizing: border-box;
@@ -13,17 +14,11 @@ html {
 }
 body {
   margin-top: 120px;
-  background: linear-gradient(
-    54deg,
-    rgba(33, 32, 136, 0.87718837535014) 5%,
-    rgba(153, 8, 8, 0.6530987394957983) 26%,
-    rgba(0, 78, 242, 0.7231267507002801) 52%,
-    rgba(48, 39, 39, 1) 90%
-  );
+  background: #AEC5EB;
 }
 h1 {
-  color: rgb(180, 22, 22);
-  font-family: verdana;
+  color: #335C57;
+  font-family: 'Open Sans', sans-serif;
   max-width: 580px;
 }
 
@@ -41,31 +36,43 @@ main {
   width: 1930px;
   position: fixed;
   top: 0px;
-  background-color: rgb(14, 87, 26);
+  background-color: #335C57;
   padding: 10px;
-  border: 10px solid yellow;
+  border: 10px solid #6B818C;
   border-radius: 15px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   &__title {
     max-width: 600px;
     font-size: xx-large;
-    font-family: OCR A Std, monospace;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
   }
-  &__title::before {
-    content: "=>";
+  &__title {
+    color: #31E981;
   }
   &__links {
-    font-family: OCR A Std, monospace;
+    font-family: 'Open Sans', sans-serif;
     font-style: initial;
-    color: #ffffff;
+    color: #31E981;
     font-size: large;
     width: 150px;
   }
   &__links:hover {
     color: rgb(58, 23, 141);
+  }
+  &__js--button {
+    background-color: #31E981;
+    width: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+  }
+  &__description {
+    margin-left: 10px;
+    color: #31E981;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 .item {
@@ -77,36 +84,36 @@ main {
 .header {
   grid-area: header;
   padding: 20px;
-  border: solid 5px yellow;
-  border-radius: 10px;
+  border: solid 5px #6B818C;
+  border-radius: 5px;
   font-size: xxx-large;
   font-family: monospace;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  flex-direction: reverse;
+  justify-content: left;
   &__content {
     font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(41, 43, 172);
+    font-family: 'Open Sans', sans-serif;
+    color: #335C57;
   }
   &__picture {
     height: 200px;
     width: 200px;
     box-sizing: border-box;
     padding: 20px;
-    border: 10px solid yellow;
+    border: 5px solid #6B818C;
     border-radius: 15px;
   }
 }
 .content {
   box-sizing: border-box;
   padding: 10px;
-  border: solid black;
-  border-radius: 10px;
+  border: solid #6B818C;
+  border-radius: 5px;
   &__head {
     display: block;
-    color: rgb(9, 117, 94);
-    font-family: verdana;
+    color: #335C57;
+    font-family: 'Open Sans', sans-serif;
     max-width: 600px;
     box-sizing: border-box;
     padding: 10px;
@@ -119,14 +126,14 @@ main {
     width: 17px;
     height: 17px;
     border-radius: 17px;
-    background-color: rgb(19, 156, 88);
+    background-color: #335C57;
   }
   &__header {
     max-width: 400px;
-    color: rgb(151, 24, 24);
+    color: #335C57;
     margin: 0px 10px 0px;
     font-size: x-large;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   &__header::before {
     content: "";
@@ -134,34 +141,34 @@ main {
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    background-color: rgb(255, 103, 57);
+    background-color: #335C57;
   }
   &__description {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family:'Open Sans', sans-serif;
     font-size: large;
   }
   &__description--concepts {
     max-width: 900px;
     text-align: left;
     margin-left: 30%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   &__content-aside {
     grid-area: aside;
     box-sizing: border-box;
     padding: 10px;
-    border: solid black;
+    border: solid #6B818C;
     border-radius: 10px;
   }
   &__subject {
-    font-size: 50px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 h4 {
   color: rgb(44, 38, 97);
   font-size: large;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0px 5px 0px;
 }
 a {
@@ -171,18 +178,17 @@ a {
 .footer {
   grid-area: footer;
   font-size: x-large;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 20px 0px 20px;
   box-sizing: border-box;
-  border: solid black;
+  border: solid #6B818C;
   padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
   &__back-to-top {
     font-size: larger;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: yellowgreen;
+    font-family: 'Open Sans', sans-serif;
+    color: #335C57;
   }
 }
 
@@ -195,20 +201,24 @@ a {
   border-radius: 20px;
   overflow: auto;
   margin: 0 auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 li {
   max-width: 900px;
   text-align: left;
   margin-left: 30%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .button__js--button {
-  background-color: coral;
+  background-color: #31E981;
   width: 100px;
-  font-family: monospace;
+  font-family: 'Open Sans', sans-serif;
   font-size: large;
+  &__description {
+    color: #31E981;
+    font-family: 'Open Sans', sans-serif;
+  }
 }
 
 .js-klasa {
@@ -225,7 +235,7 @@ li {
   width: 100px;
   height: 25px;
   background-color: rgb(255, 255, 255);
-  font-family: monospace;
+  font-family:'Open Sans', sans-serif;
   font-size: large;
 }
 
@@ -241,7 +251,7 @@ li {
     border: solid 5px yellow;
     border-radius: 10px;
     font-size: xxx-large;
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -264,14 +274,13 @@ li {
     margin-top: 0px;
     padding: 0px;
     font-size: x-large;
-    font-family: OCR A Std, monospace;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: left;
   }
   &__links {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #000000;
     font-size: large;
     margin-top: 5px;
@@ -314,7 +323,7 @@ li {
   .footer {
     width: 456px;
     font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 20px 0px 20px;
     box-sizing: border-box;
     border: solid black;
@@ -329,7 +338,7 @@ li {
     width: 100px;
     height: 25px;
     background-color: rgb(255, 255, 255);
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
     font-size: large;
   }
   .item--js {

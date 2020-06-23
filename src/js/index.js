@@ -1,10 +1,15 @@
 import '../scss/main.scss';
-
 import moment from 'moment';
 
 /* place your code below */
 
-console.log(moment().startOf('day').fromNow());
+
+const startOfDay = moment().startOf('day').fromNow();
+
+const timePlaceHolder = document.querySelector ('.time--js');
+
+timePlaceHolder.innerHTML = (startOfDay);
+
 
 console.log('HELLO 🚀');
 
@@ -39,7 +44,7 @@ function createContent(QuerySelectorContent, content){
 
 createContent(`.content__js`,`Marcin Kalita` ); 
 
-const button = document.querySelector ('.button__js--button');
+const button = document.querySelector ('.box-head__js--button');
 console. log (button);
 
 button.addEventListener('click', () => {
