@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Moja Strona domowa</title>
+    <meta name="description" content="Witam na mojej stronie domowej, jest to mój pierwszy projekt" />
+    <!-- Title -->
+    <meta property="og:title" content="Moja Strona domowa" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="Witam na mojej stronie domowej, jest to mój pierwszy projekt i lekcje frontedowe" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="https://marcin-kalita.github.io/webpack/" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta
+      property="og:image"
+      content="https://marcin-kalita.github.io/webpack/og.png"
+    />
+
   </head>
 
   <body>
@@ -23,7 +37,7 @@
     <main>
       <div class="header">
         <h2 class="header__content content__js">Witam na mojej Stronie</h2>
-        <img src="/src/assets/to-ja.jpg" alt="to-ja" class="header__picture" />
+        <img src="/public/to-ja.jpg" alt="to-ja" class="header__picture" />
       </div>
 
       <section class="content__content-aside">
