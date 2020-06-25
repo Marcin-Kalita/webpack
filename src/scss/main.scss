@@ -52,6 +52,12 @@ main {
   }
   &__title {
     color: #31E981;
+    transition: color 2s, right , 2s ease-in-out;
+    padding: 5px;
+  }
+  &__title:hover {
+    color: white;
+    padding: 30px;
   }
   &__links {
     font-family: 'Open Sans', sans-serif;
@@ -59,9 +65,10 @@ main {
     color: #31E981;
     font-size: large;
     width: 150px;
+    transition: color 1s linear;
   }
   &__links:hover {
-    color: rgb(58, 23, 141);
+    color: #f3f3f3;
   }
   &__js--button {
     background-color: #31E981;
@@ -103,6 +110,10 @@ main {
     padding: 20px;
     border: 5px solid #6B818C;
     border-radius: 15px;
+    transition: transform 1s linear; 
+  }
+  &__picture:hover {
+    transform: translate(200px, 0px);
   }
 }
 .content {
@@ -172,7 +183,11 @@ h4 {
   margin: 0px 5px 0px;
 }
 a {
-  color: #200e70;
+  color: #335C57;
+  transition: color 1s linear;
+  &:hover {
+    color: white;
+  }
 }
 
 .footer {
