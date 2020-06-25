@@ -1,4 +1,4 @@
-![welcome](https://iddp.com/wp-content/uploads/2016/08/welcome.jpg)
+![welcome](https://marcin-kalita.github.io/webpack/og.png)
 
 # Homepage Marcin Kalita
 
